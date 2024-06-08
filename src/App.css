@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -72,14 +75,7 @@
 .content {
   margin-left: 12vw;
 }
-.Chart1{
-  position: absolute;
-  left: 20vw;
-  top: 4vh;
-  height: 70vh;
-  width: 70vw;
 
-}
 .Nav {
   position: fixed;
   top: 0px;
@@ -99,3 +95,13 @@
   margin: 20px;
   margin-left: 13%;
 }
+.NavBarFont{
+  
+  background-color: #61dafb;
+  font-size: 17px;
+  font-family: Poppins, sans-serif;
+  font-weight: 650;
+  color: #476a8e;
+}
+
+
