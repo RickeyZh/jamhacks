@@ -72,7 +72,14 @@
 .content {
   margin-left: 12vw;
 }
+.Chart1{
+  position: absolute;
+  left: 20vw;
+  top: 4vh;
+  height: 70vh;
+  width: 70vw;
 
+}
 .Nav {
   position: fixed;
   top: 0px;
