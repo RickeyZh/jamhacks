@@ -19,17 +19,12 @@
   font-size: 3vh;
   padding: 3vw;
 }
-.Nav {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 10vw;
-  height: 100vh;
-  text-align: left;
-  background-color: #61dafb;
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
-  padding: 1vh;
-}
 .Nav2 {
   background-color: #61dafb;
 }
@@ -76,4 +71,16 @@
 
 .content {
   margin-left: 10vw;
+}
+
+.Nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 12vw;
+  height: 100vh;
+  text-align: left;
+  background-color: #61dafb;
+
+  padding: 1vh;
 }
