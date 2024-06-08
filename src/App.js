@@ -2,20 +2,20 @@ import './App.css';
 import { Route, Routes, Link } from "react-router-dom";
 import Navbar from './components/Navbar';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Routes>
-        <Route path="/Home" element={<Home/>} />
-        <Route path="/Current" element={<Current/>} />
-        <Route path="/Cumulative" element={<Cumulative/>} />
-        <Route path="/Visual" element={<Visual/>} />
-        <Route path="/Advice" element={<Advice/>} />
-        <Route path="/About" element={<About/>} />
-      </Routes>
+      <Menu className="Nav">
+        <MenuItem className="Item">Home</MenuItem>
+        <SubMenu label="Data" className="Nav2">
+          <MenuItem className="Item">Daily</MenuItem>
+          <MenuItem className="Item">Daily</MenuItem>
+          <MenuItem className="Item">Advice</MenuItem>
+          <MenuItem className="Item">About</MenuItem>
+
+        </SubMenu>
+        <MenuItem>About</MenuItem>
+      </Menu>
     </div>
   );
 }
-
-export default App;
