@@ -1,5 +1,4 @@
-export default function Visual(){
-    return(
-        <div>Visual</div>
-    )
+import "../App.css";
+export default function Visual() {
+  return <div>Visual</div>;
 }

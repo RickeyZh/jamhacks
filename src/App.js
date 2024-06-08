@@ -17,7 +17,6 @@ export default function App() {
         <Route path="/summary" element={<Summary />} />
         <Route path="/visual" element={<Visual />} />
         <Route path="/about" element={<About />} />
-        
       </Routes>
     </>
   );

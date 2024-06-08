@@ -1,5 +1,4 @@
-export default function Summary(){
-    return(
-        <div>Summary</div>
-    )
+import "../App.css";
+export default function Summary() {
+  return <div>Summary</div>;
 }
