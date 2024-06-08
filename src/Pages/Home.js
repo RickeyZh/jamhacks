@@ -92,9 +92,9 @@ export default function Home() {
         <div className="footer">
           <p>© 2024 GripGuardian. All rights reserved.</p>
           <p>
-            <a href="https://www.facebook.com" style={{color: '#61dafb'}}>Facebook</a> | 
-            <a href="https://www.twitter.com" style={{color: '#61dafb'}}> Twitter</a> | 
-            <a href="https://www.instagram.com" style={{color: '#61dafb'}}> Instagram</a>
+            <a href="https://www.github.com" style={{color: '#61dafb'}}>Github</a> | 
+            <a href="https://www.twitter.com" style={{color: '#61dafb'}}>Twitter</a> | 
+            <a href="https://www.instagram.com" style={{color: '#61dafb'}}>Instagram</a>
           </p>
         </div>
       </div>

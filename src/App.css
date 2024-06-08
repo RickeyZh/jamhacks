@@ -82,13 +82,13 @@
   text-align: left;
   background-color: #61dafb;
 
-  padding: 1vh;
+  padding: 2vh;
 }
-.Home {
-  text-align:center;
-  font-size: 100px;
-  color: #c9d2e5;
-  font-family: 'Tahoma', sans-serif;
-  margin: 20px;
-  margin-left: 13%;
+
+.NavBarFont{
+  background-color: #61dafb;
+  font-size: 21px;
+  font-family: Arial, sans-serif;
+  font-weight: 650;
+  color: #243c54;
 }
