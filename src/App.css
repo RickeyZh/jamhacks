@@ -6,12 +6,24 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Header{
+  position: absolute;
+  left: 15vw;
+  top: 10vh;
+  font-size: 5vw;
+}
+.Content{
+  position: absolute;
+  left: 13vw;
+  top: 25vh;
+  font-size: 3vh;
+  padding: 3vw;
+}
 .Nav {
   width: 10vw;
-  height: 100vh;
+  height:100vh;
   text-align: left;
   background-color: #61dafb;
-
   padding: 1vh;
 }
 .Nav2 {
