@@ -84,3 +84,11 @@
 
   padding: 1vh;
 }
+.Home {
+  text-align:center;
+  font-size: 100px;
+  color: #5c7ab7;
+  font-family: 'Tahoma', sans-serif;
+  margin: 20px;
+  margin-left: 13%;
+}
