@@ -70,7 +70,7 @@
 }
 
 .content {
-  margin-left: 10vw;
+  margin-left: 12vw;
 }
 
 .Nav {
@@ -85,10 +85,10 @@
   padding: 1vh;
 }
 .Home {
-  text-align:center;
+  text-align: center;
   font-size: 100px;
   color: #c9d2e5;
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   margin: 20px;
   margin-left: 13%;
 }
