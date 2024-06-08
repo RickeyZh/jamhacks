@@ -11,7 +11,7 @@ export default function Home() {
           }
 
           .App-header {
-            background-color: #282c34;
+            background-color: #3d516e;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -34,7 +34,7 @@ export default function Home() {
 
           .hero h1 {
             font-size: 4em; /* Adjust this value to change the size */
-            margin-left: 170px;
+            margin-left: 200px;
           }
 
           .cta {
@@ -60,7 +60,7 @@ export default function Home() {
           }
 
           .footer {
-            background-color: #282c34;
+            background-color: #3d516e;
             color: white;
             padding: 20px;
             text-align: center;

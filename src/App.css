@@ -47,6 +47,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Poppins, sans-serif;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -83,7 +84,7 @@
   width: 12vw;
   height: 100vh;
   text-align: left;
-  background-color: #61dafb;
+  background-color: #7f9dc7;
 
   padding: 2vh;
 }
@@ -97,11 +98,11 @@
 }
 .NavBarFont{
   
-  background-color: #61dafb;
+  background-color: #7f9dc7;
   font-size: 17px;
   font-family: Poppins, sans-serif;
   font-weight: 650;
-  color: #476a8e;
+  color: rgb(67, 94, 121);
 }
 
 
