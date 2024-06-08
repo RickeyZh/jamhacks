@@ -1,20 +1,19 @@
 import './App.css';
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Route, Routes, Link } from "react-router-dom";
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Menu className="Nav">
-        <MenuItem className="Item">Home</MenuItem>
-        <SubMenu label="Data" className="Nav2">
-          <MenuItem className="Item">Daily</MenuItem>
-          <MenuItem className="Item">Daily</MenuItem>
-          <MenuItem className="Item">Advice</MenuItem>
-          <MenuItem className="Item">About</MenuItem>
-
-        </SubMenu>
-        <MenuItem>About</MenuItem>
-      </Menu>
+      <Navbar/>
+      <Routes>
+        <Route path="/Home" element={<Home/>} />
+        <Route path="/Current" element={<Current/>} />
+        <Route path="/Cumulative" element={<Cumulative/>} />
+        <Route path="/Visual" element={<Visual/>} />
+        <Route path="/Advice" element={<Advice/>} />
+        <Route path="/About" element={<About/>} />
+      </Routes>
     </div>
   );
 }
