@@ -10,10 +10,10 @@ function LineChart2({ chartData }) {
           plugins: {
             title: {
               display: true,
-              text: "Overall Hand Stress (seperated)"
+              text: "Finger Stress (seperated)"
             },
             legend: {
-              display: false
+              display: true
             }
           }
         }}

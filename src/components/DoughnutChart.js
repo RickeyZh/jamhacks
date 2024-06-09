@@ -11,7 +11,7 @@ export default function DoughnutChart({ chartData }) {
                     text: "Issue Spread"
                   },
                   legend: {
-                    display: false
+                    display: true
                   }
                 }
             }}

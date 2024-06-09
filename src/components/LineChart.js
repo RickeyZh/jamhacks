@@ -10,7 +10,7 @@ function LineChart({ chartData }) {
           plugins: {
             title: {
               display: true,
-              text: "Overall Hand Stress"
+              text: "Palm Distance"
             },
             legend: {
               display: false

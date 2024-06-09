@@ -89,7 +89,7 @@ export default function Summary() {
       datasets: [
         {
           lineTension: 0.7,
-          label: "Users Gained ",
+          label: "User Gain",
           data: data.map((item) => item.userGain),
           backgroundColor: [
             "rgba (75,192,192,1)",
@@ -110,8 +110,64 @@ export default function Summary() {
       datasets: [
         {
           lineTension: 0.7,
-          label: "Users Lost ",
+          label: "Thumb",
           data: data.map((item) => item.userLost),
+          backgroundColor: [
+            "rgba (75,192,192,1)",
+            "#ecf0f1",
+            "#50AF95",
+            "#f3ba2f",
+            "#2a71d0",
+          ],
+          borderColor: "black",
+          borderWidth: 2,
+        },
+        {
+          lineTension: 0.7,
+          label: "Index Finger",
+          data: data.map((item) => item.userGain),
+          backgroundColor: [
+            "rgba (75,192,192,1)",
+            "#ecf0f1",
+            "#50AF95",
+            "#f3ba2f",
+            "#2a71d0",
+          ],
+          borderColor: "black",
+          borderWidth: 2,
+        },
+        {
+          lineTension: 0.7,
+          label: "Middle Finger",
+          data: data.map((item) => item.userGain),
+          backgroundColor: [
+            "rgba (75,192,192,1)",
+            "#ecf0f1",
+            "#50AF95",
+            "#f3ba2f",
+            "#2a71d0",
+          ],
+          borderColor: "black",
+          borderWidth: 2,
+        },
+        {
+          lineTension: 0.7,
+          label: "Ring Finger",
+          data: data.map((item) => item.userGain),
+          backgroundColor: [
+            "rgba (75,192,192,1)",
+            "#ecf0f1",
+            "#50AF95",
+            "#f3ba2f",
+            "#2a71d0",
+          ],
+          borderColor: "black",
+          borderWidth: 2,
+        },
+        {
+          lineTension: 0.7,
+          label: "Pinky",
+          data: data.map((item) => item.userGain),
           backgroundColor: [
             "rgba (75,192,192,1)",
             "#ecf0f1",
@@ -131,9 +187,6 @@ export default function Summary() {
       <div className="Header2">Analysis</div>
       <div className="Chart1">
         <LineChart chartData={chartData} />
-        <br />
-        <br />
-
         <LineChart2 chartData={chartData2} />
       </div>
       <div className="Chart2">
