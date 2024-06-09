@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-function LineChart({ chartData }) {
+function LineChart2({ chartData }) {
   return (
     <div className="chart-container">
       <Line
@@ -10,7 +10,7 @@ function LineChart({ chartData }) {
           plugins: {
             title: {
               display: true,
-              text: "Overall Hand Stress"
+              text: "Overall Hand Stress (seperated)"
             },
             legend: {
               display: false
@@ -21,4 +21,4 @@ function LineChart({ chartData }) {
     </div>
   );
 }
-export default LineChart;
+export default LineChart2;
