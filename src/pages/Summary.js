@@ -29,7 +29,7 @@ export default function Summary() {
     });
     
     return(
-        <div className="Chart1">
+        <div className="Chart1" style={{ backgroundColor: '#cad1db'}}>
             <LineChart chartData={chartData} />
             <LineChart chartData={chartData} />
             <LineChart chartData={chartData} />

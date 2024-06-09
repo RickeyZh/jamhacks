@@ -106,15 +106,11 @@
 }
 .AboutHeader{
   font-size: 120px;
-  margin-left: 730px;
+  margin-left: 670px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   background-color: #3d516e;
   color: #AACAFF;
-}
-.AboutContent{
-  margin-left: 12vw;
-  background-color: #3d516e;
 }
 
 
