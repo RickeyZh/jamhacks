@@ -34,7 +34,7 @@ export default function Home() {
 
           .hero h1 {
             font-size: 4em; /* Adjust this value to change the size */
-            margin-left: 200px;
+            margin-left: 225px;
           }
 
           .cta {
