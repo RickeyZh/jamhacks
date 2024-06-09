@@ -29,6 +29,7 @@ firebase.initializeApp({
   appId: "1:597863423876:web:8fdc9383d8713583af07d1",
 });
 const db = getDatabase();
+let count = 0;
 
 function read(start, id, end) {
   const tempRef = ref(db, start + id.toString() + end);
@@ -152,7 +153,6 @@ export default function Summary() {
   const h3 = read("data/", 3, "/hype");
   const h4 = read("data/", 4, "/hype");
   const h5 = read("data/", 5, "/hype");
-  let count = 0;
   useEffect(() => {
     setTimeout(() => {
       setData([
@@ -265,6 +265,8 @@ export default function Summary() {
         sonny[5 + count][1],
         sonny[5 + count][2]
       );
+      count++;
+      console.log(count, ": count");
     }, 1000);
   });
 
