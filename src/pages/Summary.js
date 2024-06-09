@@ -6,7 +6,6 @@ import "../App.css";
 import LineChart from "../components/LineChart";
 import LineChart2 from "../components/LineChart2";
 import DoughnutChart from "../components/DoughnutChart";
-import { response } from "express";
 
 Chart.register(CategoryScale);
 
