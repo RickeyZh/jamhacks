@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import LineChart from "../components/LineChart";
 import LineChart2 from "../components/LineChart2";
 import DoughnutChart from "../components/DoughnutChart";
-import test from "../data/test.json";
+
 import num from "../data/num.csv";
 import Papa from "papaparse";
 import firebase from "firebase/compat/app";
@@ -53,7 +53,7 @@ function write(id, thumb, index, mid, ring, pinky, hype) {
 
 Chart.register(CategoryScale);
 
-export default function Summary() {
+export default function Analysis() {
   const [sonny, setSonny] = useState([]);
 
   useEffect(() => {

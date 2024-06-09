@@ -6,8 +6,7 @@ function Navbar() {
     <Menu className="Nav">
       <MenuItem className="NavBarFont" component={<Link to="/"/>}>Home</MenuItem>
         <SubMenu label="Data" className="NavBarFont">
-          <MenuItem className="NavBarFont" component={<Link to="/current"/>}>Current</MenuItem>
-          <MenuItem className="NavBarFont" component={<Link to="/summary"/>}>Summary</MenuItem>
+          <MenuItem className="NavBarFont" component={<Link to="/analysis"/>}>Analysis</MenuItem>
           <MenuItem className="NavBarFont" component={<Link to="/visual"/>}>Visual</MenuItem>
         </SubMenu>
       <MenuItem component={<Link to="/about"/>} className="NavBarFont">About</MenuItem>
