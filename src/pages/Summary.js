@@ -6,6 +6,7 @@ import "../App.css";
 import LineChart from "../components/LineChart";
 import LineChart2 from "../components/LineChart2";
 import DoughnutChart from "../components/DoughnutChart";
+import { response } from "express";
 
 Chart.register(CategoryScale);
 
@@ -52,12 +53,29 @@ export default function Summary() {
 
   useEffect(() => {
     setTimeout(() => {
+      // get data from the server
       fetch("http://localhost:5038/api/grip/all")
         .then((response) => response.json())
         .then((resData) => setData(resData));
       console.log(data);
-    }, 1000);
+
+      //update from csv
+      // fetch("http://localhost:5038/api/grip/append", {
+      //   method: "POST",
+      //   body: Data,
+      // });
+      // .then((response) => response.json())
+      // .then((response) => {
+      //   console.log(response);
+      // });
+    }, 2000);
   });
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5038/api/grip/append", {
+  //     method: "POST",
+  //   });
+  // });
 
   useEffect(() => {
     if (data.length > 0) {

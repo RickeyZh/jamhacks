@@ -37,12 +37,12 @@ app.get("/api/grip/all", (request, response) => {
     });
 });
 
-app.post("/api/grip/append", multer().none(), (request, response) => {
-  database.collection("grippers").count({}, function (error, numOfDocs) {
-    database.collection("grippers").insertOne({
-      id: (numOfDocs + 1).toString(),
-      description: request.body.newNotes,
-    });
-    response.json("added successfully");
-  });
-});
+// app.post("/api/grip/append", multer().none(), (request, response) => {
+//   database.collection("grippers").count({}, function (error, numOfDocs) {
+//     database.collection("grippers").insertOne({
+//       id: numOfDocs + 1,
+//       description: request.body.newNotes,
+//     });
+//     response.json("added successfully");
+//   });
+// });
