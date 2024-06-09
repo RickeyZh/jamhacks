@@ -28,12 +28,21 @@ app.get("/api/grip/stats", (request, response) => {
     });
 });
 
-// app.post("/api/grip/append", multer().none(), (request, response) => {
-//   database.collection("Customers").count({}, function (error, numOfDocs) {
-//     database.collection("Customers").insertOne({
-//       id: (numOfDocs + 1).toString(),
-//       description: request.body.newNotes,
-//     });
-//     response.json("added successfully");
-//   });
-// });
+app.get("/api/grip/all", (request, response) => {
+  database
+    .collection("grippers")
+    .find({})
+    .toArray((error, result) => {
+      response.send(result);
+    });
+});
+
+app.post("/api/grip/append", multer().none(), (request, response) => {
+  database.collection("grippers").count({}, function (error, numOfDocs) {
+    database.collection("grippers").insertOne({
+      id: (numOfDocs + 1).toString(),
+      description: request.body.newNotes,
+    });
+    response.json("added successfully");
+  });
+});
