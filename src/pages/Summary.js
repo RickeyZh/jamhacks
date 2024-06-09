@@ -1,11 +1,48 @@
+import "../App.css";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
 import { useEffect, useState } from "react";
-import { Data } from "../components/Data";
-import "../App.css";
 import LineChart from "../components/LineChart";
 import LineChart2 from "../components/LineChart2";
 import DoughnutChart from "../components/DoughnutChart";
+import test from "../data/test.json";
+import firebase from "firebase/compat/app";
+import {
+  getDatabase,
+  ref,
+  set,
+  child,
+  get,
+  push,
+  onValue,
+} from "firebase/database";
+
+firebase.initializeApp({
+  apiKey: "AIzaSyBzjl0kMyjlXbiSLwaCaWt_OT9a1QGdEoY",
+  authDomain: "fbtest-9cadb.firebaseapp.com",
+  databaseURL: "https://fbtest-9cadb-default-rtdb.firebaseio.com",
+  projectId: "fbtest-9cadb",
+  storageBucket: "fbtest-9cadb.appspot.com",
+  messagingSenderId: "597863423876",
+  appId: "1:597863423876:web:8fdc9383d8713583af07d1",
+});
+const db = getDatabase();
+
+function read(start, id, end) {
+  const tempRef = ref(db, start + id.toString() + end);
+  let data;
+  onValue(tempRef, (snapshot) => {
+    data = snapshot.val();
+  });
+  return data;
+}
+
+function write(id, thumb, index) {
+  set(ref(db, "data/" + id.toString()), {
+    thumb: thumb,
+    index: index,
+  });
+}
 
 Chart.register(CategoryScale);
 
@@ -50,31 +87,60 @@ export default function Summary() {
     ],
   });
 
+  const a = read("data/", 0, "/thumb");
+  const b = read("data/", 1, "/thumb");
+  const c = read("data/", 2, "/thumb");
+  const d = read("data/", 3, "/thumb");
+
+  const aa = read("data/", 0, "/index");
+  const bb = read("data/", 1, "/index");
+  const cc = read("data/", 2, "/index");
+  const dd = read("data/", 3, "/index");
+
   useEffect(() => {
     setTimeout(() => {
-      // get data from the server
-      fetch("http://localhost:5038/api/grip/all")
-        .then((response) => response.json())
-        .then((resData) => setData(resData));
-      console.log(data);
-
-      //update from csv
-      // fetch("http://localhost:5038/api/grip/append", {
-      //   method: "POST",
-      //   body: Data,
-      // });
-      // .then((response) => response.json())
-      // .then((response) => {
-      //   console.log(response);
-      // });
-    }, 2000);
+      setData([
+        {
+          year: a,
+          userGain: aa,
+          userLost: 50,
+        },
+        {
+          year: b,
+          userGain: bb,
+          userLost: 100,
+        },
+        {
+          year: c,
+          userGain: cc,
+          userLost: 150,
+        },
+        {
+          year: d,
+          userGain: dd,
+          userLost: 200,
+        },
+        {
+          year: 2019,
+          userGain: 500,
+          userLost: 250,
+        },
+        {
+          year: 2020,
+          userGain: 600,
+          userLost: 300,
+        },
+        {
+          year: 2021,
+          userGain: 700,
+          userLost: 350,
+        },
+      ]);
+      write(test.at(0).id, test.at(0).thumb, test.at(0).index);
+      write(test.at(1).id, test.at(1).thumb, test.at(1).index);
+      write(test.at(2).id, test.at(2).thumb, test.at(2).index);
+    }, 1000);
   });
-
-  // useEffect(() => {
-  //   fetch("http://localhost:5038/api/grip/append", {
-  //     method: "POST",
-  //   });
-  // });
 
   useEffect(() => {
     if (data.length > 0) {
