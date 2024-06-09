@@ -71,10 +71,10 @@ export default function Home() {
       <div className="App-header">
         <div className="hero">
           <h1>Welcome to GripGuardian</h1>
-          <button className="cta" style={{marginLeft:150}}>Demo Video</button>
+          <button className="cta" style={{marginLeft:110}}>Demo Video</button>
         </div>
 
-        <div className="features" style={{marginLeft:135}}>
+        <div className="features" style={{marginLeft:90}}>
           <div className="feature">
             <h2>Feature 1</h2>
             <p>Description of feature 1</p>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="footer" style={{marginLeft:160}}>
+        <div className="footer" style={{marginLeft:110}}>
           <p>© 2024 GripGuardian. All rights reserved.</p>
           <p>
             <a href="https://www.github.com" style={{color: '#61dafb'}}>Github</a> | 
