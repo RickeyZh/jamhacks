@@ -265,11 +265,12 @@ export default function Analysis() {
         sonny[5 + count][1],
         sonny[5 + count][2]
       );
+      if (count > 700) count = 15;
       count++;
-      console.log(count, ": count");
-    }, 1000);
+    }, 500);
   });
 
+  console.log(count, ": count");
   useEffect(() => {
     if (data.length > 0) {
       save();
