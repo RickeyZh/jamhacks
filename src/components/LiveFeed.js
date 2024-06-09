@@ -205,7 +205,7 @@ export default function App() {
         dpr={[1, 2]}
         camera={{ fov: 45 }}
         shadows={{ enabled: "false" }}
-        style={{ position: "absolute", width: "87%" }}
+        style={{ position: "absolute", width: "85.8%" }}
       >
         <color attach="background" args={["#000"]} />
         <PresentationControls
