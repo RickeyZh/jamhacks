@@ -15,12 +15,33 @@
   top: 10vh;
   font-size: 5vw;
 }
+.Header2 {
+  position: absolute;
+  left: 50%;
+  top: 1vh;
+  font-size: 3vw;
+}
 .Content {
   position: absolute;
   left: 13vw;
   top: 25vh;
   font-size: 3vh;
   padding: 3vw;
+}
+.Chart1{
+  position: absolute;
+  width: 35vw;
+  height: 100vh;
+  left: 15vw;
+  top: 10vh;
+}
+.Chart2{
+  position: absolute;
+  left: 57vw;
+  width: 35vw;
+  height: 80vh;
+  top: 15vh;
+  
 }
 /*  */
 /*  */
